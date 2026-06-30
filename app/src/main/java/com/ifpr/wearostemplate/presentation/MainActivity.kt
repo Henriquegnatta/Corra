@@ -9,6 +9,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.ifpr.wearostemplate.R
+import com.ifpr.wearostemplate.presentation.theme.corrida
+import android.content.Intent
+import android.widget.Button
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +22,12 @@ class MainActivity : ComponentActivity() {
         setTheme(android.R.style.Theme_DeviceDefault)
 
         setContentView(R.layout.activity_main)
+        val btncorrida = findViewById<Button>(R.id.btnCorre)
+
+        btncorrida.setOnClickListener {
+            val intent = Intent(this, corrida::class.java)
+            startActivity(intent)
+        }
     }
 }
 

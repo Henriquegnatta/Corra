@@ -10,10 +10,10 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Titulo"
+        android:layout_marginBottom="16dp"
+        android:text="00:00"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -21,17 +21,12 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Play"/>
+            android:id="@+id/btnCorre"
+            android:layout_width="48dp"
+            android:layout_height="38dp"
+            android:background="#DEB621"
+            android:text="▶" />
 
-        <Button
-            android:id="@+id/btnStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Stop"
-            android:layout_marginStart="8dp"/>
 
     </LinearLayout>
 
